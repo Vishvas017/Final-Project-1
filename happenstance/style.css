@@ -1,0 +1,441 @@
+*
+{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: arial;
+    text-decoration: none;
+}
+header
+{
+    width: 100%;
+    height: 40px;
+    background-color: black;
+    position: sticky;
+    top: 0px;
+}
+.nav
+{
+    width: 72%;
+    height: 40px;
+    margin: auto;
+    /* background-color: aliceblue; */
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.nav i
+{
+    padding: 0px 10px;
+    font-size: 20px;
+}
+.nav a
+{
+    color: white;
+}
+.wish
+{
+    position: relative;
+}
+.wishlist
+{
+    width: 400px;
+    height: 275px;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    background-color:white;
+    box-shadow: 0px 5px 10px  gray;
+    position: absolute;
+    display:block;
+    top: 140%;
+    right:5%;
+    visibility: hidden;
+}
+.wishlist .div1
+{
+    width:85%;
+    height: 70px;
+    margin: auto;
+    /* background-color: aliceblue; */
+    color: black;
+    border-bottom: 1px solid rgb(209, 211, 214);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.wishlist .div1 p
+{
+    color: grey;
+    font-size: 14px;
+}
+.wishlist .div2 
+{
+    width:85%;
+    height:180px;
+    margin: auto;
+    color: grey;
+    text-align: center;
+    /* background-color: red; */
+}
+.wishlist .div2 i
+{
+    position: relative;
+    top: 30%;
+    font-size: 40px;
+}
+.wishlist .div2 p
+{
+    position: relative;
+    top: 30%;
+}
+.wish:hover .wishlist
+{
+    visibility: visible;
+}
+/* cart start here */
+.cart
+{
+    position: relative;
+}
+.shopping
+{
+    width: 400px;
+    height: 275px;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    background-color:white;
+    box-shadow: 0px 5px 10px  gray;
+    position: absolute;
+    display:block;
+    top: 140%;
+    right:5%;
+    visibility: hidden;
+}
+.shopping .div1
+{
+    width:85%;
+    height: 70px;
+    margin: auto;
+    /* background-color: aliceblue; */
+    color: black;
+    border-bottom: 1px solid rgb(209, 211, 214);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.shopping .div1 p
+{
+    color: grey;
+    font-size: 14px;
+}
+.shopping .div2 
+{
+    width:85%;
+    height:180px;
+    margin: auto;
+    color: grey;
+    text-align: center;
+    /* background-color: red; */
+}
+.shopping .div2 i
+{
+    position: relative;
+    top: 30%;
+    font-size: 40px;
+}
+.shopping .div2 p
+{
+    position: relative;
+    top: 30%;
+}
+.cart:hover .shopping
+{
+    visibility: visible;
+}
+.header
+{
+    position: sticky;
+    top: 40px;
+}
+.menu
+{
+    width: 72%;
+    height:80px;
+    margin: auto;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+    background: rgba( 255, 255, 255, 0.5 );
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 4px );
+}
+.menu div
+{
+    width: 400px;
+    height: 60px;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+}
+.menu div img
+{
+    width: 250px;
+}
+.menu div a
+{
+    color: black;
+    font-weight: 600;
+    padding: 0px 10px;
+}
+.div3
+{
+    display: flex;
+    justify-content: flex-end;
+}
+.menu div input
+{
+    /* margin: auto; */
+    width: 60%;
+    height: 70%;
+    border: 1px solid lightgray;
+    border-radius: 40px;
+    
+}
+.menu div input::placeholder
+{
+    
+    padding: 0px 10px;
+    font-size: 16px;
+}
+.div2 a::after
+{
+    content: "";
+    display: block;
+    height: 1px;
+    width: 0%;
+    margin: auto;
+    background: black;
+    transition: all ease ease-in-out 0.4s;
+}
+.div2 a:hover::after
+{
+    width: 100%;
+}
+.banner
+{
+    width: 72%;
+    height: 452px;
+    margin: auto;
+    border-radius: 10px;
+    background-color: antiquewhite;
+}
+.banner img
+{
+    width: 100%;
+    height: 452px;
+}
+.haps
+{
+    width: 72%;
+    height: 24px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /* display: flex;
+    justify-content: space-around;
+    align-items: center; */
+}
+.haps h4
+{
+    color: #555;
+    text-align: center;
+    position: relative;
+}
+.haps h4::before
+{
+    content: "";
+    display: block;
+    height: 1px;
+    width: 43%;
+    background: #d1d5db;
+    left: 0%;
+    top: 50%;
+    position: absolute;
+}
+.haps h4::after
+{
+    content: "";
+    display: block;
+    height: 1px;
+    width: 43%;
+    background: #d1d5db;
+    right: 0%;
+    top: 50%;
+    position: absolute;
+}
+.categories
+{
+    width: 72%;
+    height: 570px;
+    margin: auto;
+    /* background-color: antiquewhite; */
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.categories a
+{
+    width: 24%;
+    height: 280px;
+}
+.categories div img
+{
+    width: 100%;
+    border-radius: 5px;
+}
+.moments
+{
+    width: 72%;
+    height: 1350px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.vid
+{
+    width: 335px;
+    height: 442px;
+}
+.video
+{
+    width: 335px;
+    height: 416px;
+    border-radius: 7px;
+}
+.video video
+{
+    border-radius: 7px;
+    width: 100%;
+}
+.video img
+{
+    width: 100%;
+    border-radius: 7px;
+}
+.vid p
+{
+    padding: 5px 5px;
+    font-size: 12px;
+    color:#555;
+}
+.btn
+{
+    width: 120px;
+    height: 29px;
+    margin: 10px auto ;
+    border: 1px solid rgb(137, 131, 131);
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+footer
+{
+    width: 100%;
+    height: 480px;
+    margin-top: 48px;
+    border-top: 1px solid rgb(229, 231, 235);
+    background-color: rgb(249 250 251);
+}
+.footer
+{
+    width: 70%;
+    height: 251px;
+    margin: 2% auto;
+    display: flex;
+    justify-content: space-between;
+}
+.footer div
+{
+    width: 331px;
+    height: 251px;
+}
+.footer div ul
+{
+    padding-top: 30px;
+}
+.footer div ul li
+{
+    list-style: none;
+    padding: 7px 0px;
+}
+.footer div ul li a
+{
+    text-decoration: none;
+    color: #555;
+}
+.follow
+{
+    width: 72%;
+    height: 24px;
+    margin: auto;
+    /* margin-top: 20px;
+    margin-bottom: 20px; */
+    /* display: flex;
+    justify-content: space-around;
+    align-items: center; */
+}
+.follow h3
+{
+    color: #555;
+    text-align: center;
+    position: relative;
+}
+.follow h3::before
+{
+    content: "";
+    display: block;
+    height: 1px;
+    width: 45%;
+    background: #d1d5db;
+    left: 0%;
+    top: 50%;
+    position: absolute;
+}
+.follow h3::after
+{
+    content: "";
+    display: block;
+    height: 1px;
+    width: 45%;
+    background: #d1d5db;
+    right: 0%;
+    top: 50%;
+    position: absolute;
+}
+.social
+{
+    width: 17%;
+    height: 48px;
+    margin: 1%  auto;
+}
+.social img
+{   
+    width: 48px;
+    margin: 0px 5px;
+}
+.copy
+{
+    width: 19%;
+    margin: auto;
+    font-size: 14px;
+    color: #555;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
